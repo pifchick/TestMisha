@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css" integrity="sha256-kLaT2GOSpHechhsozzB+flnD+zUyjE2LlfWPgU04xyI=" crossorigin="" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <title>Document</title>
+</head>
+<body>
+
+  <div class="row no-gutters">
+    <div class="col-md-6 no-gutters">
+      <div class="form" id="form">
+        <form class="fields">
+          <label for="fecha-hora">Date </label>
+          <input name="fecha-hora" id="fecha-hora" type="datetime-local" required >
+          <br></br>
+          <label class="titulo-seccion">The address of the accident site</label>
+          <br></br>
+          <label for="calle">Street </label>
+          <input type="text" name="calle" class="domicilio" id="calle" placeholder="Street" required >
+          <br></br>
+          <label for="numero">Number </label>
+          <input type="number" name="numero" class="domicilio" id="numero" placeholder="Number" required >
+          <label for="numero-int"></label>
+          <input type="number" name="numero-int" class="domicilio" id="numero-int" placeholder="Index" required >
+          <br></br>
+          <label for="colonia">Region </label>
+          <input type="text" name="colonia" class="domicilio" id="colonia" placeholder="Region" required >
+          <label for="municipio">Municipality </label>
+          <input type="text" name="municipio" class="domicilio" id="municipio" placeholder="Municipality" required >
+          <br></br>
+          <label for="coordinates">Coordinates  </label>
+          <input type="text" name="coordinates" class="coordinates" id="latitude" placeholder="Latitude" required >
+          <input type="text" name="coordinates" class="coordinates" id="longitude" placeholder="Longitude" required >
+          <br></br>
+          <input class="btn btn-light" type="submit" value="Submit">
+        </form>
+      </div>
+    </div>
+    <div class="col-md-6 no-gutters">
+      <div class="map" id="map"></div>
+    </div>
+  </div>
+
+  <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js" integrity="sha256-WBkoXOwTeyKclOHuWtc+i2uENFpDZ9YPdf5Hf+D7ewM=" crossorigin=""></script>
+  <script src="scripts.js"></script>
+</body>
+</html>
